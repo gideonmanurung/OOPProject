@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.application.controller.SMADosController">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="44.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="642.0" prefWidth="600.0">
+        <tabs>
+            <Tab text="Update Kuis">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="481.0" layoutY="65.0" text="Kuis">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="481.0" layoutY="118.0" text="Judul" />
+                        <Label layoutX="451.0" layoutY="154.0" prefHeight="21.0" prefWidth="82.0" text="Pertanyaan" />
+                        <TextField fx:id="titleKuisTF" layoutX="91.0" layoutY="114.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="pertanyaanTF" layoutX="91.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="280.0" />
+                        <Button layoutX="40.0" layoutY="268.0" mnemonicParsing="false" onAction="#updateKuis" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #232132;" text="Update" textFill="#f8f7f7" />
+                        <Label layoutX="464.0" layoutY="196.0" text="Jawaban" />
+                        <TextField fx:id="jawabanTF" layoutX="91.0" layoutY="192.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="280.0" />
+                        <Label layoutX="-1.0" layoutY="582.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #232132;" text="Copyright@ 2016 KingSchooling" textFill="#f8f5f5" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Update Materi">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="491.0" layoutY="96.0" text="Input Materi">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="519.0" layoutY="142.0" prefHeight="21.0" prefWidth="53.0" text="Title" />
+                        <Label layoutX="511.0" layoutY="181.0" prefHeight="10.0" prefWidth="29.0" text="Topic" />
+                        <TextField fx:id="titleTF" layoutX="143.0" layoutY="141.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="280.0" />
+                        <TextField fx:id="pathTF" layoutX="214.0" layoutY="217.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="209.0">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TextField>
+                        <Button layoutX="48.0" layoutY="282.0" mnemonicParsing="false" onAction="#updateMateri" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #232132;" text="Update" textFill="#f5efef" />
+                        <Button layoutX="143.0" layoutY="216.0" mnemonicParsing="false" onAction="#browseFile" style="-fx-background-color: #232132;" text="Browse" textFill="#fcf7f7" />
+                        <Label layoutX="523.0" layoutY="221.0" prefHeight="10.0" prefWidth="30.0" text="File" />
+                        <TextField fx:id="topicTF" layoutX="142.0" layoutY="177.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="280.0" />
+                        <Label layoutX="-1.0" layoutY="582.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #232132;" text="Copyright@ 2016 KingSchooling" textFill="#f8f5f5" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="SMA">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="517.0" layoutY="50.0" text="Materi">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOutBtn" style="-fx-background-color: #232132;" text="Log Out" textFill="#f8f6f6" />
+                        <Label layoutX="534.0" layoutY="307.0" text="Kuis">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="-1.0" layoutY="582.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #232132;" text="Copyright@ 2016 KingSchooling" textFill="#f8f5f5" />
+                        <Button layoutX="461.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #232132;" text="Back to Home" textFill="#f8f3f3" />
+                        <TableView fx:id="lessonTB" layoutX="15.0" layoutY="84.0" prefHeight="200.0" prefWidth="572.0">
+                          <columns>
+                            <TableColumn fx:id="columnTopic" prefWidth="247.0" text="Topic" />
+                            <TableColumn fx:id="columnTitle" prefWidth="240.0" text="Title" />
+                              <TableColumn fx:id="columnID" minWidth="0.0" prefWidth="84.0" text="ID" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TabPane>
+      <Label layoutX="130.0" layoutY="8.0" text="Sekolah Menengah Atas (SMA)">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="111.0" prefWidth="471.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="139.0" layoutY="49.0" text="Username/Password tidak valid !!" textFill="#111111">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/stop.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

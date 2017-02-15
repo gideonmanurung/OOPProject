@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Jun-2016, 19:11:17
+    Author     : 11S14052 (HTTP 14)
+*/
+/*pane{
+    -fx-background-color:#009999;
+    -fx-background-images: "E:\Projek\src\org\application\image\sd.jpg";
+}
+.button{
+    -fx-background-color: #009999;
+}
+#head { background:#181015 url( ../image/sd.jpg) no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }*/
+.background
+{
+    -fx-background-image: url( ../image/wow.jpg);
+    -fx-background-size: 350px 350px;        
+    -fx-background-repeat: stretch;
+    -fx-background-position: 30px,  900px;
+    
+}
+.head{
+    -fx-background-color:#009999; 
+}
+/*
+body{
+    background: url( ../image/sd.jpg);
+    
+}*/
+
+/*.tab {
+-fx-background-color:#009999; 
+    color: #009999;
+}*/
+.body{
+    -fx-background-color:#06SAD8; 
+    }
